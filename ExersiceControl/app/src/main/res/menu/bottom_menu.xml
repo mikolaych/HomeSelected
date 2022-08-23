@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/navCatalog"
+        android:icon="@drawable/catalog"
+        android:title="@string/nav_catalog_name"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/navCalc"
+        android:icon="@drawable/calculator"
+        android:title="@string/nav_calc_name"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/navNotes"
+        android:icon="@drawable/notes"
+        android:title="@string/nav_notes_name"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/navCalendar"
+        android:icon="@drawable/calendar"
+        android:title="@string/nav_calendar_name"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/navTimer"
+        android:icon="@drawable/timer"
+        android:title="@string/nav_timer_name"
+        app:showAsAction="ifRoom"
+        />
+
+</menu>

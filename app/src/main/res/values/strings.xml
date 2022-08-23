@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">HomeSelected</string>
+
+    <string name="panel">ПАНЕЛЬ</string>
+    <string name="catalogObjects">ОБЪЕКТЫ</string>
+    <string name="catalogFlats">КВАРТИРЫ</string>
+    <string name="catalogCategories">КАТЕГОРИИ</string>
+
+
+    <string name="addCategory">ДОБАВИТЬ КАТЕГОРИЮ</string>
+    <string name="addObject">ДОБАВИТЬ ОБЪЕКТ</string>
+
+    <string name="editCategory">РЕДАКТИРОВАНИЕ КАТЕГОРИИ</string>
+    <string name="editObject">РЕДАКТИРОВАНИЕ ОБЪЕКТА</string>
+
+
+    <string name="labelEnterCategory">Категория объекта</string>
+    <string name="labelEnterNameObject">Введите название объекта</string>
+    <string name="labelEnterPriceObject">Цена объекта</string>
+
+    <string name="deleteAllCategories">УДАЛИТЬ ВСЕ КАТЕГОРИИ</string>
+    <string name="deleteAllObject">УДАЛИТЬ ВСЕ ОБЪЕКТЫ</string>
+
+    <string name="houses">ДОМА</string>
+    <string name="land">ЗЕМЛЯ</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="catalogClothes">КОММЕНТАРИИ</string>
+    <string name="labelEnterPriceProduct">Цена</string>
+    <string name="labelEnterFloor">Этаж</string>
+    <string name="labelEnterFloorInHouse">Этажей в доме</string>
+    <string name="labelEnterCity">Город</string>
+    <string name="labelEnterStreet">Улица</string>
+    <string name="labelEnterHouse">Номер дома</string>
+    <string name="labelEnterFlat">Номер квартиры</string>
+    <string name="labelEnterSquare">Площадь объекта</string>
+    <string name="labelEnterRepair">Ремонт(состояние)</string>
+    <string name="labelEnterPhone">Номер телефона</string>
+    <string name="labelEnterContactName">Имя контакта</string>
+    <string name="labelEnterRoomNumber">Количество комнат</string>
+    <string name="labelEnterComments">Комментарии</string>
+
+</resources>
