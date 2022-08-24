@@ -9,11 +9,11 @@
         android:title="@string/panel"
         app:showAsAction="ifRoom"/>
 
-    <item
+    <!--<item
         android:id="@+id/catalogCategoriesItemBottomNav"
         android:icon="@drawable/catalog_categories"
         android:title="@string/catalogCategories"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="ifRoom"/> -->
 
 
     <item

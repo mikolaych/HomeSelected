@@ -45,10 +45,14 @@ class ObjectAdaptor (private val deleteObject:(ObjectModel)->Unit,
 
         ) {
 
-            binding.idObject.text = objectModel.id.toString()
-            binding.nameObject.text = objectModel.category
-            binding.categoryObject.text = objectModel.category
-            binding.priceObject.text = objectModel.price.toString()
+
+            binding.roomNumberObject.text = objectModel.roomNumber
+            binding.categoryObject.text = objectModel.city
+            binding.priceObject.text = objectModel.price
+            binding.streetObject.text = objectModel.street
+            binding.houseObject.text = objectModel.house
+            binding.nameContactObject.text = objectModel.contactName
+            binding.phoneContactObject.text = objectModel.phone
 
             binding.editObject.setOnClickListener(View.OnClickListener {
                 editObject(objectModel)

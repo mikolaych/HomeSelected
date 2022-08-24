@@ -16,6 +16,16 @@
         <entry key="..\:/Info/comp/programming/MappBu/Projects/app/src/main/res/layout/panel_edit_category.xml" value="0.5298245614035088" />
         <entry key="..\:/Info/comp/programming/MappBu/Projects/app/src/main/res/layout/panel_edit_object.xml" value="0.5401041666666667" />
         <entry key="..\:/Info/comp/programming/MappBu/Projects/app/src/main/res/menu/bottom_menu.xml" value="0.5541666666666667" />
+        <entry key="app/src/main/res/drawable/cursor.xml" value="0.2035" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.19583333333333333" />
+        <entry key="app/src/main/res/layout/category_item.xml" value="0.19583333333333333" />
+        <entry key="app/src/main/res/layout/fragment_tab_categories.xml" value="0.19583333333333333" />
+        <entry key="app/src/main/res/layout/fragment_tab_filters.xml" value="0.19583333333333333" />
+        <entry key="app/src/main/res/layout/fragment_tab_objects.xml" value="0.19583333333333333" />
+        <entry key="app/src/main/res/layout/fragment_tab_panel.xml" value="0.34854771784232363" />
+        <entry key="app/src/main/res/layout/object_item.xml" value="0.4893203883495146" />
+        <entry key="app/src/main/res/layout/panel_edit_object.xml" value="0.19583333333333333" />
+        <entry key="app/src/main/res/menu/bottom_menu.xml" value="0.5" />
       </map>
     </option>
   </component>

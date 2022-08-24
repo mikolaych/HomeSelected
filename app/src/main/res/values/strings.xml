@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">HomeSelected</string>
 
-    <string name="panel">ПАНЕЛЬ</string>
+    <string name="panel">РЕДАКТОР</string>
     <string name="catalogObjects">ОБЪЕКТЫ</string>
     <string name="catalogFlats">КВАРТИРЫ</string>
     <string name="catalogCategories">КАТЕГОРИИ</string>
@@ -39,5 +39,11 @@
     <string name="labelEnterContactName">Имя контакта</string>
     <string name="labelEnterRoomNumber">Количество комнат</string>
     <string name="labelEnterComments">Комментарии</string>
+    <string name="money">руб</string>
+    <string name="floor">этаж из</string>
+    <string name="squareText">S:</string>
+    <string name="phoneText">Тел:</string>
+    <string name="repairText">Ремонт:</string>
+    <string name="roomNumberText">комн.</string>
 
 </resources>

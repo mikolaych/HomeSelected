@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
             R.id.panelItemBottomNav -> supportFragmentManager.beginTransaction().replace(R.id.content, TabPanelFragment()).commit()
             R.id.catalogProductsItemBottomNav -> supportFragmentManager.beginTransaction().replace(R.id.content, TabObjectsFragment()).commit()
             R.id.catalogClothesItemBottomNav -> supportFragmentManager.beginTransaction().replace(R.id.content, TabFiltersFragment()).commit()
-            R.id.catalogCategoriesItemBottomNav -> supportFragmentManager.beginTransaction().replace(R.id.content, TabCategoriesFragment()).commit()
+//            R.id.catalogCategoriesItemBottomNav -> supportFragmentManager.beginTransaction().replace(R.id.content, TabCategoriesFragment()).commit()
         }
 
         return true

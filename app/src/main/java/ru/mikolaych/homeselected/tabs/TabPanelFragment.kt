@@ -66,9 +66,9 @@ class TabPanelFragment : Fragment(), View.OnClickListener, View.OnKeyListener {
 
         binding?.buttonAddObject?.setOnClickListener(this)
 
-        binding?.buttonAddCategoryFlats?.setOnClickListener(this)
-        binding?.buttonAddCategoryHouses?.setOnClickListener(this)
-        binding?.buttonAddCategoryComments?.setOnClickListener(this)
+//        binding?.buttonAddCategoryFlats?.setOnClickListener(this)
+//        binding?.buttonAddCategoryHouses?.setOnClickListener(this)
+//        binding?.buttonAddCategoryComments?.setOnClickListener(this)
 
         return binding?.root
     }
@@ -80,7 +80,9 @@ class TabPanelFragment : Fragment(), View.OnClickListener, View.OnKeyListener {
             R.id.enterFloorObject -> {
                 if (keyEvent.action == KeyEvent.ACTION_DOWN && i == KeyEvent.KEYCODE_ENTER) {
                     binding?.resEnterFloorObject?.text = binding?.enterFloorObject?.text
+                    binding?.floorText?.text = "этаж из"
                     binding?.enterFloorObject?.setText("")
+
                     return true
                 }
 
@@ -98,7 +100,122 @@ class TabPanelFragment : Fragment(), View.OnClickListener, View.OnKeyListener {
             R.id.enterPriceObject -> {
                 if (keyEvent.action == KeyEvent.ACTION_DOWN && i == KeyEvent.KEYCODE_ENTER) {
                     binding?.resEnterPriceObject?.text = binding?.enterPriceObject?.text
+                    binding?.money?.text = "руб."
                     binding?.enterPriceObject?.setText("")
+
+                    return true
+                }
+
+            }
+
+            R.id.enterRoomNumber -> {
+                if (keyEvent.action == KeyEvent.ACTION_DOWN && i == KeyEvent.KEYCODE_ENTER) {
+                    binding?.resEnterRoomNumberObject?.text = binding?.enterRoomNumber?.text
+                    binding?.roomNumberText?.text = "комн."
+                    binding?.enterRoomNumber?.setText("")
+
+                    return true
+                }
+
+            }
+
+            R.id.enterFloorInHouse -> {
+                if (keyEvent.action == KeyEvent.ACTION_DOWN && i == KeyEvent.KEYCODE_ENTER) {
+                    binding?.resEnterFloorInHouseObject?.text = binding?.enterFloorInHouse?.text
+                    binding?.enterFloorInHouse?.setText("")
+                    return true
+                }
+
+            }
+
+            R.id.enterCity -> {
+                if (keyEvent.action == KeyEvent.ACTION_DOWN && i == KeyEvent.KEYCODE_ENTER) {
+                    binding?.resEnterCityObject?.text = binding?.enterCity?.text
+                    binding?.enterCity?.setText("")
+                    return true
+                }
+
+            }
+
+            R.id.enterStreet-> {
+                if (keyEvent.action == KeyEvent.ACTION_DOWN && i == KeyEvent.KEYCODE_ENTER) {
+                    binding?.resEnterStreetObject?.text = binding?.enterStreet?.text
+                    binding?.streetText?.text = "Ул."
+                    binding?.enterStreet?.setText("")
+
+                    return true
+                }
+
+            }
+
+            R.id.enterHouse-> {
+                if (keyEvent.action == KeyEvent.ACTION_DOWN && i == KeyEvent.KEYCODE_ENTER) {
+                    binding?.resEnterHouseObject?.text = binding?.enterHouse?.text
+                    binding?.houseText?.text = "д."
+                    binding?.enterHouse?.setText("")
+
+                    return true
+                }
+
+            }
+
+            R.id.enterFlat-> {
+                if (keyEvent.action == KeyEvent.ACTION_DOWN && i == KeyEvent.KEYCODE_ENTER) {
+                    binding?.resEnterFlatObject?.text = binding?.enterFlat?.text
+                    binding?.slash?.text = "кв."
+                    binding?.enterFlat?.setText("")
+
+                    return true
+                }
+
+            }
+
+            R.id.enterSquare-> {
+                if (keyEvent.action == KeyEvent.ACTION_DOWN && i == KeyEvent.KEYCODE_ENTER) {
+                    binding?.resEnterSquareObject?.text = binding?.enterSquare?.text
+                    binding?.squareText?.text = "S:"
+                    binding?.enterSquare?.setText("")
+
+                    return true
+                }
+
+            }
+
+            R.id.enterRepair-> {
+                if (keyEvent.action == KeyEvent.ACTION_DOWN && i == KeyEvent.KEYCODE_ENTER) {
+                    binding?.resEnterRepairObject?.text = binding?.enterRepair?.text
+                    binding?.repairText?.text = "ремонт:"
+                    binding?.enterRepair?.setText("")
+
+                    return true
+                }
+
+            }
+
+            R.id.enterPhone-> {
+                if (keyEvent.action == KeyEvent.ACTION_DOWN && i == KeyEvent.KEYCODE_ENTER) {
+                    binding?.resEnterPhoneObject?.text = binding?.enterPhone?.text
+                    binding?.phoneText?.text = "Тел:"
+                    binding?.enterPhone?.setText("")
+
+                    return true
+                }
+
+            }
+
+            R.id.enterContactName-> {
+                if (keyEvent.action == KeyEvent.ACTION_DOWN && i == KeyEvent.KEYCODE_ENTER) {
+                    binding?.resEnterContactNameObject?.text = binding?.enterContactName?.text
+                    binding?.enterContactName?.setText("")
+                    return true
+                }
+
+            }
+
+            R.id.enterComments-> {
+                if (keyEvent.action == KeyEvent.ACTION_DOWN && i == KeyEvent.KEYCODE_ENTER) {
+                    binding?.resEnterCommentObject?.text = binding?.enterComments?.text
+                    binding?.enterComments?.setText("")
                     return true
                 }
 
@@ -112,7 +229,7 @@ class TabPanelFragment : Fragment(), View.OnClickListener, View.OnKeyListener {
 
         when(view.id) {
 
-            R.id.buttonAddCategoryFlats -> {
+         /*   R.id.buttonAddCategoryFlats -> {
 
                 categoryViewModel?.startInsert(binding?.buttonAddCategoryFlats?.text?.toString()!!)
 
@@ -128,12 +245,13 @@ class TabPanelFragment : Fragment(), View.OnClickListener, View.OnKeyListener {
 
                 categoryViewModel?.startInsert(binding?.buttonAddCategoryComments?.text?.toString()!!)
 
-            }
+            }*/
 
             R.id.buttonAddObject -> {
 
-                objectViewModel?.startInsert(binding?.resEnterFloorObject?.text?.toString()!!,
+                objectViewModel?.startInsert(
                     binding?.resEnterCategoryObject?.text?.toString()!!,
+                    binding?.resEnterCityObject?.text?.toString()!!,
                     binding?.resEnterStreetObject?.text?.toString()!!,
                     binding?.resEnterHouseObject?.text?.toString()!!,
                     binding?.resEnterFlatObject?.text?.toString()!!,
@@ -158,7 +276,29 @@ class TabPanelFragment : Fragment(), View.OnClickListener, View.OnKeyListener {
     private fun clearResEnterProduct() {
         binding?.resEnterFloorObject?.setText("")
         binding?.resEnterCategoryObject?.setText("")
+        binding?.resEnterCityObject?.setText("")
         binding?.resEnterPriceObject?.setText("")
+        binding?.resEnterStreetObject?.setText("")
+        binding?.resEnterHouseObject?.setText("")
+        binding?.resEnterFlatObject?.setText("")
+        binding?.resEnterRoomNumberObject?.setText("")
+        binding?.resEnterSquareObject?.setText("")
+        binding?.resEnterFloorObject?.setText("")
+        binding?.resEnterFloorInHouseObject?.setText("")
+        binding?.resEnterRepairObject?.setText("")
+        binding?.resEnterPhoneObject?.setText("")
+        binding?.resEnterContactNameObject?.setText("")
+        binding?.resEnterCommentObject?.setText("")
+        binding?.phoneText?.setText("")
+        binding?.repairText?.setText("")
+        binding?.squareText?.setText("")
+        binding?.roomNumberText?.setText("")
+        binding?.money?.setText("")
+        binding?.floorText?.setText("")
+        binding?.slash?.setText("")
+        binding?.houseText?.setText("")
+        binding?.streetText?.setText("")
+
 
     }
 
