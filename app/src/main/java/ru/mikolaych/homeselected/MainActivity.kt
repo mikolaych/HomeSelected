@@ -21,10 +21,10 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
 
-        supportFragmentManager.beginTransaction().replace(R.id.content, TabPanelFragment()).commit()
+        supportFragmentManager.beginTransaction().replace(R.id.content, TabObjectsFragment()).commit()
 
         binding?.bottomNav?.setOnNavigationItemSelectedListener(this)
-        binding?.bottomNav?.selectedItemId = R.id.panelItemBottomNav
+        binding?.bottomNav?.selectedItemId = R.id.catalogProductsItemBottomNav
 
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
 

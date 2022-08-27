@@ -16,13 +16,27 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/deleteAllObjects"
-                android:layout_width="match_parent"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="40dp"
                 android:layout_marginTop="20dp"
+                android:background="@drawable/button"
                 android:text="@string/deleteAllObject"
-                android:background="@color/orange"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/addObject"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button"
+                android:text="@string/addObject"
+                android:textColor="@android:color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/deleteAllObjects"
+                app:layout_constraintTop_toTopOf="@+id/deleteAllObjects" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerObjects"
@@ -31,6 +45,8 @@
                 app:layout_constraintTop_toBottomOf="@id/deleteAllObjects"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
+
+
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

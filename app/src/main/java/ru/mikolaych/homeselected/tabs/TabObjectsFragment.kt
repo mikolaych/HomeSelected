@@ -27,6 +27,7 @@ class TabObjectsFragment : Fragment() {
     private var objectAdaptor: ObjectAdaptor? = null
 
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -65,6 +66,8 @@ class TabObjectsFragment : Fragment() {
     private fun deleteObject(productModel:ObjectModel) {
         objectViewModel?.deleteObject(productModel)
     }
+
+
 
     private fun editObject(objectModel:ObjectModel) {
         val panelEditObject = PanelEditObject()
